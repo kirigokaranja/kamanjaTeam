@@ -2997,4 +2997,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-top: 120px;
   padding-bottom: 40px;
 }
+.projects-button{
+  margin-top:20px;
+  margin-left: 45%;
+  padding: 20px;
+  background-color: transparent; 
+  border: solid #f04b4c; 
+  border-radius: 15px;
+}
+.projects-button:hover{
+  cursor: pointer;
+}
 
