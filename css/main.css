@@ -2947,14 +2947,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media only screen and (min-width: 600px){
   .fplus-about-us-area .about-us-text p {
-    font-size: 12px;
-    line-height: 1;
+    font-size: 14px;
+    line-height: 2;
+    margin-left: 10px;
   }
 }
 @media only screen and (min-width: 768px) {
   .fplus-about-us-area .about-us-text p {
-    font-size: 12px;
-    line-height: 1;
+    font-size: 14px;
+    line-height: 2;
+    margin-left: 10px;
   }
 }
 
