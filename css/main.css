@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Kaushan+Script|Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
 /*--------------------------- Color variations ----------------------*/
 /* Medium Layout: 1280px */
 /* Tablet Layout: 768px */
@@ -2290,11 +2291,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 .banner-content h1 {
   color: #fff;
   font-size: 72px;
-  font-weight: 700;
-  line-height: 1em;
+  font-weight: 400;
+  line-height: 17px;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', sans-serif;
+  letter-spacing: 7px;
 }
 
 .banner-content h1 span {

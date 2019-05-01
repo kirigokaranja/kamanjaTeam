@@ -1,0 +1,38 @@
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+
+.fplus-projects-menu {
+    padding: 35px 15px;
+    background-color: #fff;
+    box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.fplus-projects-menu button.btn {
+    font-size: 12px;
+    font-weight: 600;
+    background-color: transparent;
+    color: #959595;
+    text-transform: uppercase;
+    border: none;
+    padding: 0 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.fplus-projects-menu button.btn:hover,
+.fplus-projects-menu button.btn:focus,
+.fplus-projects-menu button.btn.active {
+    color: #000000;
+    box-shadow: none;
+    text-decoration: none;
+}
