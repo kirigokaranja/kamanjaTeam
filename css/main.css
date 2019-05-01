@@ -59,6 +59,7 @@ body {
   font-weight: 300;
   line-height: 1.625em;
   position: relative;
+  width: 100%;
 }
 
 ol, ul {
@@ -2942,6 +2943,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 18px;
   line-height: 2;
   font-weight: 400;
+}
+
+@media only screen and (min-width: 600px){
+  .fplus-about-us-area .about-us-text p {
+    font-size: 12px;
+    line-height: 1;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .fplus-about-us-area .about-us-text p {
+    font-size: 12px;
+    line-height: 1;
+  }
 }
 
 .fplus-single-feature {
