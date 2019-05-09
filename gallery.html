@@ -20,6 +20,12 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script>
+        // MDB Lightbox Init
+        $(function() {
+            $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+        });
+    </script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="css/loader.css">
@@ -37,95 +43,122 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-heading text-center">
-                    <h4>Portfolio</h4>
+                    <h4 class="h1 text-center text-uppercase font-weight-bold mt-5 mb-3 mt-5">Portfolio</h4>
                     <div class="section-heading-line"></div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
+    <div class="row ml-3 mr-3 pb-4 pt-1">
+        <!--
+        <div class="fplus-projects-menu">
+            <div class="text-center portfolio-menu">
+                <button class="btn active btn-default filter-button" data-filter="all">All Fields</button>
+                <button class="btn btn-default filter-button" data-filter="construction">Construction</button>
+                <button class="btn btn-default filter-button" data-filter="roomDesigns">Room Designs</button>
+                <button class="btn btn-default filter-button" data-filter="homeDesigns">Home Designs</button>
+                <button class="btn btn-default filter-button" data-filter="buildings">Buildings</button>
 
-            <div class="fplus-projects-menu">
-                <div class="text-center portfolio-menu">
-                    <button class="btn active btn-default filter-button" data-filter="all">All Fields</button>
-                    <button class="btn btn-default filter-button" data-filter="construction">Construction</button>
-                    <button class="btn btn-default filter-button" data-filter="roomDesigns">Room Designs</button>
-                    <button class="btn btn-default filter-button" data-filter="homeDesigns">Home Designs</button>
-                    <button class="btn btn-default filter-button" data-filter="buildings">Buildings</button>
-
-                </div>
             </div>
-            <br/>
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter roomDesigns">
-                <img src="images/bedroom.jpg" class="img-responsive">
+        <br/>
+        -->
+        <div class="col-md-12">
+            <div id="mdb-lightbox-ui"></div>
+            <div class="mdb-lightbox">
+                <figure class="col-md-3">
+                    <!--gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter roomDesigns-->
+                    <a href="images/bedroom.jpg" data-size="1600x1067">
+                        <img src="images/bedroom.jpg" class="img-fluid z-depth-1"></a>
+                    <p class="text-uppercase font-weight-bold blue-grey-text mt-4">Bedroom</p>
+                </figure>
+                <figure class="col-md-3">
+                    <!--gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter roomDesigns-->
+                    <a href="images/lounge.jpg" data-size="1600x1067">
+                        <img src="images/lounge.jpg" class="img-fluid z-depth-1"></a>
+                    <p>Lounge</p>
+                </figure>
+                <figure class="col-md-3">
+                    <!--gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter roomDesigns-->
+                    <a href="images/dining-room.jpg" data-size="1600x1067">
+                        <img src="images/dining-room.jpg" class="img-fluid z-depth-1"></a>
+                </figure>
+                <figure class="col-md-3">
+                    <!--gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter homeDesigns-->
+                    <a href="images/home_front.jpg" data-size="1600x1067">
+                        <img src="images/home_front.jpg" class="img-fluid z-depth-1"></a>
+                </figure>
+                <figure class="col-md-3">
+                    <!--gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter construction-->
+                    <a href="images/construction_work1.jpg" data-size="1600x1067">
+                        <img src="images/construction_work1.jpg" class="img-fluid z-depth-1">
+                    </a>
+                </figure>
+                <figure class="col-md-3">
+                    <!--gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter construction-->
+                    <a href="images/construction_canvas.jpg" data-size="1600x1067">
+                        <img src="images/construction_canvas.jpg" class="img-fluid z-depth-1">
+                    </a>
+                </figure>
+                <figure class="col-md-3">
+                    <!--gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter buildings-->
+                    <a href="images/Astrol-2017.JPG" data-size="1600x1067">
+                        <img src="images/Astrol-2017.JPG" class="img-fluid z-depth-1">
+                    </a>
+                </figure>
+                <figure class="col-md-3">
+                    <!--gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter construction-->
+                    <a href="images/construction_work2.JPG" data-size="1600x1067">
+                        <img src="images/construction_work2.JPG" class="img-fluid z-depth-1">
+                    </a>
+                </figure>
+                <figure class="col-md-3">
+                    <!--gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter buildings-->
+                    <a href="images/Godowns.jpg" data-size="1600x1067">
+                        <img src="images/Godowns.jpg" class="img-fluid z-depth-1">
+                    </a>
+                </figure>
+                <figure class="col-md-3">
+                    <!--gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter homeDesigns-->
+                    <a href="images/final_solid_gate.jpg" data-size="1600x1067">
+                        <img src="images/final_solid_gate.jpg" class="img-fluid z-depth-1">
+                    </a>
+                </figure>
+                <figure class="col-md-3">
+                    <!--gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter homeDesigns-->
+                    <a href="images/town-houses.jpg" data-size="1600x1067">
+                        <img src="images/town-houses.bmp" class="img-fluid z-depth-1">
+                    </a>
+                </figure>
+                <figure class="col-md-3">
+                    <!--gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter buildings-->
+                    <a href="images/StMary's.jpeg" data-size="1600x1067">
+                        <img src="images/StMary's.jpeg" class="img-fluid z-depth-1"></a>
+                </figure>
+                <figure class="col-md-3">
+                    <!--gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter construction-->
+                    <a href="images/Crest-park.jpg" data-size="1600x1067">
+                        <img src="images/Crest-park.jpg" class="img-fluid z-depth-1"></a>
+                </figure>
+                <figure class="col-md-3">
+                    <!--gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter buildings-->
+                    <a href="images/multipurpose-hall.jpg" data-size="1600x1067">
+                        <img src="images/multipurpose-hall.jpg" class="img-fluid z-depth-1"></a>
+                </figure>
+                <figure class="col-md-3">
+                    <!--gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter buildings-->
+                    <a href="images/stunning-homes.jpg" data-size="1600x1067">
+                        <img src="images/stunning-homes.jpg" class="img-fluid z-depth-1"></a>
+                </figure>
+                <figure class="col-md-3">
+                    <!--gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter homeDesigns-->
+                    <a href="images/3D-Court-Yard-Front.JPG" data-size="1600x1067">
+                        <img src="images/3D-Court-Yard-Front.JPG" class="img-fluid z-depth-1"></a>
+                </figure>
             </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter roomDesigns">
-                <img src="images/lounge.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter roomDesigns">
-                <img src="images/dining-room.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter homeDesigns">
-                <img src="images/home_front.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter construction">
-                <img src="images/construction_work1.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter construction">
-                <img src="images/construction_canvas.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter buildings">
-                <img src="images/Astrol-2017.JPG" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter construction">
-                <img src="images/construction_work2.JPG" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter buildings">
-                <img src="images/Godowns.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter homeDesigns">
-                <img src="images/final_solid_gate.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter homeDesigns">
-                <img src="images/town-houses.bmp" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter buildings">
-                <img src="images/StMary's.jpeg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter construction">
-                <img src="images/Crest-park.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter buildings">
-                <img src="images/multipurpose-hall.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter buildings">
-                <img src="images/stunning-homes.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter homeDesigns">
-                <img src="images/3D-Court-Yard-Front.JPG" class="img-responsive">
-            </div>
-
         </div>
     </div>
     <script src="js/gallery.js"></script>
     <script src="js/loader.js"></script>
-
 </body>
 
 </html>
